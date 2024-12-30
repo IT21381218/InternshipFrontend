@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+.navbar {
+    position: absolute; /* Keep the navbar always visible at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it stays above other elements */
+    background-color: rgba(0, 0, 0, 0.397); /* Semi-transparent blue */
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  
+  .navbar-left {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-left li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-search {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-links {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .auth-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-links a:first-child {
+    margin-right: 5px;
+  }
+  

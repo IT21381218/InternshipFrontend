@@ -1,0 +1,75 @@
+/* Home.css */
+
+.home-container {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-top {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .home-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .home-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 50%;
+    z-index: 2;
+  }
+  
+  .home-text-overlay h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+  
+  .discount-text {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .buy-now-button {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-now-button:hover {
+    background-color: #e64a19;
+  }
+  
+  .home-bottom {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .home-bottom h2 {
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .home-bottom p {
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
