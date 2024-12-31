@@ -1,0 +1,100 @@
+/* FlightBooking.css */
+
+.flight-booking-container {
+    max-width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+.class-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.class-button {
+    width: 200px;
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #808080;
+    color: #ffffff;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.3s ease;
+}
+
+.class-button.active {
+    background-color: #9c27b0;
+    color: white;
+}
+
+.class-button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.booking-form {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px; /* Ensures a minimum width for the form groups */
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Specific styling for Departure City and Arrival City */
+.form-group.departure-city,
+.form-group.arrival-city {
+    flex: 1; /* Ensure they take equal width */
+}
+
+.form-group.passengers,
+.form-group.departure-date,
+.form-group.arrival-date {
+    flex: 1; /* Ensure they take equal width */
+}
+
+.search-button {
+    margin-top: 20px;
+    width: 30%;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #9c27b0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Centers the button */
+    margin-right: auto; /* Centers the button */
+}
+
+.search-button:hover {
+    background-color: #7b1fa2;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import FlightBooking from './FlightBooking';
 import './styles/Home.css'; // Import Home.css
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-bottom">
+      <FlightBooking />
         <h2>Home Page</h2>
         <p>Welcome to the home page!</p>
       </div>
