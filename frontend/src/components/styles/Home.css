@@ -1,8 +1,10 @@
+/* General Styles */
 .home-container {
     min-height: 150vh;
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: #eeeeee;
   }
   
   .home-top {
@@ -11,10 +13,29 @@
     overflow: hidden;
   }
   
+  .home-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
   .home-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1b0013, transparent 70%);
+    z-index: 1;
   }
   
   .home-text-overlay {
@@ -22,8 +43,7 @@
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
     max-width: 50%;
     z-index: 2;
   }
@@ -44,36 +64,47 @@
     background-color: #991347;
     color: white;
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: relative;
   }
   
   .buy-now-button:hover {
     background-color: #cf0351;
   }
   
-  /* Styling for FlightBooking Wrapper */
+  .buy-now-icon {
+    color: #991347;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  
   .flight-booking-wrapper {
     position: absolute;
-    top: 23%; /* Position it below the "Buy Now" button */
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    z-index: 999; /* Ensure it stays in front */
+    z-index: 999;
   }
   
   .home-bottom {
     flex-grow: 1;
     padding: 120px;
-    background-color: #eeeeee;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 0; /* Ensure it stays behind the flight-booking-wrapper */
+    z-index: 0;
   }
   
   .left-section {
@@ -129,30 +160,14 @@
   .video-container {
     margin-top: 20px;
     max-width: 100%;
-    border-radius: 15px; /* Added border radius for rounded corners */
-    overflow: hidden; /* Ensures the video fits within the rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .video-container:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-  }
-  
-  @media (max-width: 768px) {
-    .home-text-overlay {
-      left: 5%;
-      max-width: 80%;
-    }
-  
-    .home-bottom {
-      flex-direction: column;
-    }
-  
-    .left-section, .right-section {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   }
   

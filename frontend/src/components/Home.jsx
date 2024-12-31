@@ -5,6 +5,7 @@ import Footer from './Footer';
 import './styles/Home.css'; // Import Home.css
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { MdArrowOutward } from 'react-icons/md'; // Import the arrow icon
 
 const Home = () => {
   useEffect(() => {
@@ -15,18 +16,22 @@ const Home = () => {
     <div className="home-container">
       <Navbar />
       <div className="home-top">
-        <img
-          src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640906/intern%20frontend/813332880475470663_cqexlh.png"
-          alt="Top Section"
-          className="home-image"
-        />
+        <div className="home-image-container">
+          <img
+            src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640906/intern%20frontend/813332880475470663_cqexlh.png"
+            alt="Top Section"
+            className="home-image"
+          />
+          <div className="home-image-overlay"></div>
+        </div>
         <div className="home-text-overlay">
           <h1>Explore the World Together <br /> with Premium Travel</h1>
           <p className="discount-text">Get up to 51% Discount</p>
-          <button className="buy-now-button">Buy Now</button>
+          <button className="buy-now-button">
+            Buy Now <MdArrowOutward className="buy-now-icon" />
+          </button>
         </div>
       </div>
-      {/* FlightBooking component is placed here to span across both sections */}
       <div className="flight-booking-wrapper">
         <FlightBooking />
       </div>
@@ -71,14 +76,13 @@ const Home = () => {
               height="315"
               src="https://res.cloudinary.com/dwcxwpn7q/video/upload/v1734544185/zade/x_c6e9br.mp4"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

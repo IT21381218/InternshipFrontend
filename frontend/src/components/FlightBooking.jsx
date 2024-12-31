@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MdArrowOutward } from "react-icons/md"; // Import the icon
 import './styles/FlightBooking.css';
 
 const FlightBooking = () => {
@@ -93,6 +94,7 @@ const FlightBooking = () => {
 
         <button className="search-button" onClick={handleSearch}>
           Search Flight
+          <MdArrowOutward className="search-button-icon" />
         </button>
       </div>
     </div>

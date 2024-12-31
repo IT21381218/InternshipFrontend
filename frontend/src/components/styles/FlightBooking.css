@@ -1,15 +1,15 @@
 .flight-booking-page {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers the entire page content */
-  gap: 0px; /* Adds space between class-selection and container */
+  align-items: center;
+  gap: 0px;
   padding: 20px;
 }
 
 .class-selection {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Adds spacing between buttons */
+  gap: 10px;
 }
 
 .class-button {
@@ -38,14 +38,14 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Horizontally centers children */
-  gap: 20px; /* Adds spacing between children */
+  align-items: center;
+  gap: 20px;
 }
 
 .booking-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers form elements horizontally */
+  justify-content: center;
   gap: 15px;
 }
 
@@ -57,7 +57,7 @@
 
 .form-group label {
   font-size: 0.9rem;
-  color: #555;
+  color: #70012c;
   margin-bottom: 5px;
 }
 
@@ -80,9 +80,93 @@
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .search-button:hover {
-  background-color: #7b1fa2;
+  background-color: #cf0351;
+}
+
+.search-button-icon {
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #991347;
+  position: absolute;
+  right: 2px;
+  padding: 13px;
+}
+
+/* Mobile responsive styles */
+
+/* For max-width: 1200px */
+@media (max-width: 1200px) {
+  .flight-booking-container {
+    max-width: 90%;
+  }
+
+  .class-button {
+    width: 180px;
+    font-size: 1.1rem;
+  }
+
+  .search-button {
+    width: 35%;
+    font-size: 1.1rem;
+  }
+
+  .form-group {
+    min-width: 250px;
+  }
+}
+
+/* For max-width: 768px */
+@media (max-width: 768px) {
+  .flight-booking-container {
+    max-width: 95%;
+  }
+
+  .class-button {
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  .search-button {
+    width: 40%;
+    font-size: 1rem;
+  }
+
+  .form-group {
+    min-width: 200px;
+  }
+}
+
+/* For max-width: 480px */
+@media (max-width: 480px) {
+  .flight-booking-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .class-button {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+
+  .search-button {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .form-group {
+    min-width: 150px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.9rem;
+  }
 }
