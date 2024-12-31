@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar />
       <div className="home-top">
         <img
-          src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1731704487/my%20portfolio/796426334420222470_pmxogf.png"
+          src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640906/intern%20frontend/813332880475470663_cqexlh.png"
           alt="Top Section"
           className="home-image"
         />

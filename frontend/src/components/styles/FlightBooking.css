@@ -25,7 +25,7 @@
 }
 
 .class-button.active {
-  background-color: #9c27b0;
+  background-color: #991347;
   color: white;
 }
 
@@ -75,7 +75,7 @@
   padding: 15px;
   font-size: 1.2rem;
   color: white;
-  background-color: #9c27b0;
+  background-color: #991347;
   border: none;
   border-radius: 50px;
   cursor: pointer;

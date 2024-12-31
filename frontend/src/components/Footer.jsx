@@ -42,11 +42,11 @@ const Footer = () => {
         <h3>Gallery Showcase</h3>
         <div className="gallery">
           <img src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735639456/intern%20frontend/813326657067760057_imlsmr.png" alt="Gallery 1" />
-          <img src="https://via.placeholder.com/70" alt="Gallery 2" />
-          <img src="https://via.placeholder.com/70" alt="Gallery 3" />
-          <img src="https://via.placeholder.com/70" alt="Gallery 4" />
-          <img src="https://via.placeholder.com/70" alt="Gallery 5" />
-          <img src="https://via.placeholder.com/70" alt="Gallery 6" />
+          <img src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640071/intern%20frontend/813328894745756046_wmaxhj.png" alt="Gallery 2" />
+          <img src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640072/intern%20frontend/813328503903725869_kwjyqu.png" alt="Gallery 3" />
+          <img src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640072/intern%20frontend/813328482428889082_v3aj8d.png" alt="Gallery 4" />
+          <img src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640120/intern%20frontend/813329758034195872_j6jn6o.png" alt="Gallery 5" />
+          <img src="https://res.cloudinary.com/dwcxwpn7q/image/upload/v1735640207/intern%20frontend/813328941990396899_jnultf.png" alt="Gallery 6" />
         </div>
       </div>
     </footer>

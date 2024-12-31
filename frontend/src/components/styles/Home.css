@@ -41,7 +41,7 @@
   }
   
   .buy-now-button {
-    background-color: #ff5722;
+    background-color: #991347;
     color: white;
     font-size: 1rem;
     padding: 10px 20px;
@@ -52,13 +52,13 @@
   }
   
   .buy-now-button:hover {
-    background-color: #e64a19;
+    background-color: #cf0351;
   }
   
   /* Styling for FlightBooking Wrapper */
   .flight-booking-wrapper {
     position: absolute;
-    top: 25%; /* Position it below the "Buy Now" button */
+    top: 23%; /* Position it below the "Buy Now" button */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
