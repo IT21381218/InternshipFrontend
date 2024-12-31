@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import FlightBooking from './FlightBooking';
+import Footer from './Footer';
 import './styles/Home.css'; // Import Home.css
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -77,6 +78,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
