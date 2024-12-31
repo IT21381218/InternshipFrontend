@@ -88,13 +88,12 @@
     padding: 7px;
   }
   
+  /* Adjust flight-booking-wrapper positioning */
   .flight-booking-wrapper {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    position: relative; /* Change from absolute to relative */
+    margin-top: -10%; /* Add a negative margin to bring it closer to the top */
     z-index: 999;
+    width: 100%;
   }
   
   .home-bottom {
@@ -160,14 +159,165 @@
   .video-container {
     margin-top: 20px;
     max-width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .video-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  /* Mobile Responsiveness */
+  
+  /* Max-width 1200px */
+  @media (max-width: 1200px) {
+    .home-top {
+      height: 60vh;
+    }
+  
+    .home-text-overlay h1 {
+      font-size: 1.5rem;
+    }
+  
+    .discount-text {
+      font-size: 0.9rem;
+    }
+  
+    .buy-now-button {
+      font-size: 0.9rem;
+      padding: 8px 40px;
+    }
+  
+    .home-bottom {
+      padding: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .timeline-item {
+      margin-bottom: 20px;
+    }
+  
+    .timeline-step {
+      width: 35px;
+      height: 35px;
+      font-size: 1.2rem;
+    }
+  
+    .timeline-content h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Max-width 768px */
+  @media (max-width: 768px) {
+    .home-top {
+      height: 50vh;
+    }
+  
+    .home-text-overlay {
+      left: 5%;
+      max-width: 80%;
+    }
+  
+    .home-text-overlay h1 {
+      font-size: 1.3rem;
+    }
+  
+    .discount-text {
+      font-size: 0.8rem;
+    }
+  
+    .buy-now-button {
+      font-size: 0.8rem;
+      padding: 8px 30px;
+    }
+  
+    .home-bottom {
+      padding: 60px 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .timeline-item {
+      margin-bottom: 15px;
+    }
+  
+    .timeline-step {
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+    }
+  
+    .timeline-content h3 {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Max-width 480px */
+  @media (max-width: 480px) {
+    .home-top {
+      height: 40vh;
+    }
+  
+    .home-text-overlay {
+      left: 5%;
+      max-width: 90%;
+    }
+  
+    .home-text-overlay h1 {
+      font-size: 1.1rem;
+    }
+  
+    .discount-text {
+      font-size: 0.7rem;
+    }
+  
+    .buy-now-button {
+      font-size: 0.7rem;
+      padding: 12px 40px;
+    }
+  
+    .home-bottom {
+      padding: 40px 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .timeline-item {
+      margin-bottom: 10px;
+    }
+  
+    .timeline-step {
+      width: 25px;
+      height: 25px;
+      font-size: 0.9rem;
+    }
+  
+    .timeline-content h3 {
+      font-size: 0.8rem;
+    }
+  
+    .video-container {
+      margin-top: 10px;
+    }
   }
   
