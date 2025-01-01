@@ -100,6 +100,100 @@
   padding: 13px;
 }
 
+/* Default styles for the SweetAlert2 modal */
+.swal-popup {
+  border-radius: 15px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px; /* Max width for larger screens */
+}
+
+.swal-title {
+  font-size: 1.5rem;
+  color: #991347;
+}
+
+.swal-html-container {
+  font-size: 1rem;
+  color: #333;
+}
+
+.swal-confirm-button {
+  font-size: 1rem;
+  background-color: #991347;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.swal-confirm-button:hover {
+  background-color: #cf0351;
+}
+
+/* Mobile responsive styles */
+
+/* For max-width: 1200px */
+@media (max-width: 1200px) {
+  .swal-popup {
+    width: 90%; /* Adjust width for medium screens */
+  }
+
+  .swal-title {
+    font-size: 1.3rem; /* Adjust title font size */
+  }
+
+  .swal-html-container {
+    font-size: 0.9rem; /* Adjust text font size */
+  }
+
+  .swal-confirm-button {
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}
+
+/* For max-width: 768px */
+@media (max-width: 768px) {
+  .swal-popup {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .swal-title {
+    font-size: 1.1rem; /* Adjust title font size */
+  }
+
+  .swal-html-container {
+    font-size: 0.85rem; /* Adjust text font size */
+  }
+
+  .swal-confirm-button {
+    font-size: 0.85rem; /* Adjust button font size */
+  }
+}
+
+/* For max-width: 480px */
+@media (max-width: 480px) {
+  .swal-popup {
+    width: 100%; /* Full width for very small screens */
+  }
+
+  .swal-title {
+    font-size: 1rem; /* Adjust title font size */
+  }
+
+  .swal-html-container {
+    font-size: 0.8rem; /* Adjust text font size */
+  }
+
+  .swal-confirm-button {
+    font-size: 0.8rem; /* Adjust button font size */
+  }
+}
+
+
+
+
 /* Mobile responsive styles */
 
 /* For max-width: 1200px */

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { MdArrowOutward } from "react-icons/md"; // Import the icon
+import Swal from 'sweetalert2'; // Import SweetAlert2
+import { MdArrowOutward } from "react-icons/md";
 import './styles/FlightBooking.css';
 
 const FlightBooking = () => {
@@ -11,10 +12,36 @@ const FlightBooking = () => {
   const [passengers, setPassengers] = useState(1);
 
   const handleSearch = () => {
-    alert(
-      `Class: ${selectedClass}\nDeparture: ${departureCity}\nArrival: ${arrivalCity}\nDeparture Date: ${departureDate}\nArrival Date: ${arrivalDate}\nPassengers: ${passengers}`
-    );
+    Swal.fire({
+      title: 'Flight Search Details',
+      html: `
+        <div style="text-align: left;">
+          <p><strong>Class:</strong> ${selectedClass}</p>
+          <p><strong>Departure:</strong> ${departureCity || 'Not Selected'}</p>
+          <p><strong>Arrival:</strong> ${arrivalCity || 'Not Selected'}</p>
+          <p><strong>Departure Date:</strong> ${departureDate || 'Not Selected'}</p>
+          <p><strong>Arrival Date:</strong> ${arrivalDate || 'Not Selected'}</p>
+          <p><strong>Passengers:</strong> ${passengers}</p>
+        </div>
+      `,
+      icon: 'success',
+      iconColor: '#991347',
+      confirmButtonText: 'Close',
+      confirmButtonColor: '#991347',
+      background: '#f9f9f9',
+      customClass: {
+        popup: 'swal-popup',
+        title: 'swal-title',
+        htmlContainer: 'swal-html-container',
+        confirmButton: 'swal-confirm-button',
+      },
+      willOpen: () => {
+        const popup = Swal.getPopup();
+        popup.style.width = '80%'; // Default width
+      },
+    });
   };
+  
 
   return (
     <div className="flight-booking-page">
