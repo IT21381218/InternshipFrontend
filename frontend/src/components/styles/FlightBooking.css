@@ -104,6 +104,11 @@
 
 /* For max-width: 1200px */
 @media (max-width: 1200px) {
+
+  .flight-booking-page{
+    margin-top:-100px;
+  }
+
   .flight-booking-container {
     max-width: 90%;
   }
@@ -125,6 +130,11 @@
 
 /* For max-width: 768px */
 @media (max-width: 768px) {
+
+  .flight-booking-page{
+    margin-top:-80px;
+  }
+
   .flight-booking-container {
     max-width: 95%;
   }
@@ -146,6 +156,11 @@
 
 /* For max-width: 480px */
 @media (max-width: 480px) {
+
+  .flight-booking-page{
+    margin-top:-35px;
+  }
+
   .flight-booking-container {
     max-width: 100%;
     padding: 15px;

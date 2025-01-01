@@ -26,6 +26,46 @@
   width: auto;
 }
 
+/* Responsive Logo Styles */
+@media (max-width: 1200px) {
+  .logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar-logo {
+    order: -1; /* Move the logo to the top */
+    margin: 0 auto 0px; /* Center the logo and add spacing below */
+  }
+
+  .logo {
+    height: 60px; /* Increase logo size */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .navbar-logo {
+    margin: 0 auto 0px; /* Center the logo and add more spacing below */
+  }
+
+  .logo {
+    height: 70px; /* Further increase logo size */
+  }
+}
+
+/* Other Navbar Styles */
 .navbar-left {
   list-style-type: none;
   display: flex;
@@ -102,7 +142,7 @@
 /* For screens smaller than 1200px */
 @media (max-width: 1200px) {
   .navbar-left {
-    gap: 15px;
+    gap: 3px;
   }
 
   .navbar-search {
@@ -112,11 +152,6 @@
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px;
-  }
-
   .navbar-left {
     flex-direction: column;
     gap: 10px;
@@ -155,37 +190,37 @@
   }
 
   /* Hamburger icon styles */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  gap: 6px; /* Add gap between the lines */
-  width: 30px;
-  height: 25px;
-  justify-content: space-between;
-  margin-left: auto;
-  z-index: 15;
-  cursor: pointer;
-}
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Add gap between the lines */
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    margin-left: auto;
+    z-index: 15;
+    cursor: pointer;
+  }
 
-.hamburger .line {
-  width: 100%;
-  height: 4px;
-  background-color: white;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
+  .hamburger .line {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
 
-/* When the hamburger is open (transforms into an "X") */
-.hamburger.open .line:nth-child(1) {
-  transform: rotate(45deg) translateY(15px);
-}
+  /* When the hamburger is open (transforms into an "X") */
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translateY(15px);
+  }
 
-.hamburger.open .line:nth-child(2) {
-  opacity: 0;
-}
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger.open .line:nth-child(3) {
-  transform: rotate(-45deg) translateY(-15px);
-}
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-15px);
+  }
 
   /* Overlay styles */
   .overlay {
@@ -211,10 +246,6 @@
 
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
-  .navbar {
-    padding: 10px;
-  }
-
   .navbar-left {
     gap: 8px;
   }
